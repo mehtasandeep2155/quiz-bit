@@ -11,7 +11,7 @@ export default component$(() => {
     <>
       <h1>Qwik/React mother of all demos</h1>
       <select
-        value={variant.value}
+        value={variant?.value}
         onChange$={(ev) => {
           variant.value = (ev?.target as any)?.value;
         }}
