@@ -22,18 +22,18 @@ export default component$(() => {
       </select>
 
       <MUISlider
-        value={count.value}
+        value={count?.value}
         onChange$={(_, value) => {
           count.value = value as number;
         }}
       />
 
       <MUIButton variant={variant.value} host:onClick$={() => alert('click')}>
-        Slider is {count.value}
+        Slider is {count?.value}
       </MUIButton>
 
       <button onClick$={() => (show.value = true)}>Show table</button>
-      {show.value && <TableApp client:visible>Slider is {count.value}</TableApp>}
+      {show?.value && <TableApp client:visible>Slider is {count?.value}</TableApp>}
     </>
   );
 });
