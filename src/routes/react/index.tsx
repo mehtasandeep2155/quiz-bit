@@ -28,12 +28,6 @@ export default component$(() => {
         }}
       />
 
-      <MUIButton variant={variant.value} host:onClick$={() => alert('click')}>
-        Slider is {count?.value}
-      </MUIButton>
-
-      <button onClick$={() => (show.value = true)}>Show table</button>
-      {/* {show?.value && <TableApp>Slider is {count?.value}</TableApp>} */}
     </>
   );
 });

@@ -1,8 +1,8 @@
 import { qwikify$ } from "@builder.io/qwik-react";
-import { GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import { MUIDataGrid } from "./mui";
+import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 
-export const TableApp = qwikify$(() => {
+
+export const TableApp = qwikify$(() =>{
     const columns: GridColDef[] = [
       { field: 'id', headerName: 'ID', width: 70 },
       { field: 'firstName', headerName: 'First name', width: 130 },
@@ -41,7 +41,7 @@ export const TableApp = qwikify$(() => {
         <h1>Hello from React</h1>
   
         <div style={{ height: 400, width: '100%' }}>
-          <MUIDataGrid
+          <DataGrid 
             rows={rows}
             columns={columns}
             pageSize={5}
