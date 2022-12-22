@@ -13,7 +13,7 @@ export default component$(() => {
       <select
         value={variant.value}
         onChange$={(ev) => {
-          variant.value = (ev.target as any).value;
+          variant.value = (ev?.target as any)?.value;
         }}
       >
         <option>text</option>
