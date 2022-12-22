@@ -1,0 +1,1 @@
+import{z as e,R as o,_}from"./q-2a88489c.js";const a=e(o(()=>_(()=>import("./q-ed64ceba.js").then(t=>t.e),["build/q-ed64ceba.js","build/q-2a88489c.js"]),"s_i4frY0Pt5lk")),r={title:"Qwik React"};export{a as default,r as head};
