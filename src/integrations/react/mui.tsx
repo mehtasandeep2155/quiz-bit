@@ -1,11 +1,11 @@
-/** @jsxImportSource react */
-
 import { qwikify$ } from '@builder.io/qwik-react';
 import { Button, Slider } from '@mui/material';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 
 export const MUIButton = qwikify$(Button);
 export const MUISlider = qwikify$(Slider, { eagerness: 'hover' });
+
+export const MUIDataGridTab = qwikify$(DataGrid);
 
 export const TableApp = qwikify$(() => {
   const columns: GridColDef[] = [
@@ -46,7 +46,7 @@ export const TableApp = qwikify$(() => {
       <h1>Hello from React</h1>
 
       <div style={{ height: 400, width: '100%' }}>
-        <DataGrid
+        <MUIDataGridTab
           rows={rows}
           columns={columns}
           pageSize={5}
