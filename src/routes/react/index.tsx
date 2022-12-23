@@ -20,13 +20,13 @@ export default component$(() => {
         <option>outlined</option>
         <option selected>contained</option>
       </select>
-
+{/* 
       <MUISlider
         value={count?.value}
         onChange$={(_, value) => {
           count.value = value as number;
         }}
-      />
+      /> */}
 
     </>
   );
